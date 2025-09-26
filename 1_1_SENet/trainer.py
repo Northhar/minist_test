@@ -123,17 +123,8 @@ def main():
     
     # 加载数据
     print("加载MNIST数据集...")
-    # 切换到父目录以正确访问archive文件夹
-    original_cwd = os.getcwd()
-    parent_dir = os.path.dirname(os.path.abspath(__file__))
-    parent_parent_dir = os.path.dirname(parent_dir)
-    os.chdir(parent_parent_dir)
-    
-    try:
-        train_loader, test_loader = get_mnist_dataloaders(batch_size=64)
-    finally:
-        # 恢复原始工作目录
-        os.chdir(original_cwd)
+    # 直接调用，路径在 dataset.py 中按项目根目录解析
+    train_loader, test_loader = get_mnist_dataloaders(batch_size=64)
     print(f"训练集批次数: {len(train_loader)}")
     print(f"测试集批次数: {len(test_loader)}")
     
