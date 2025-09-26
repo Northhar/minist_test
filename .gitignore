@@ -3,3 +3,6 @@ __pycache__/
 
 # Ignore IDE configs
 .idea/
+
+# Ignore macOS metadata
+.DS_Store

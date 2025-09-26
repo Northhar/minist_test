@@ -3,7 +3,7 @@
 环境要求
 - Python 版本：建议 3.10（项目中出现的 pycache 为 cpython-310）
 - 深度学习框架：PyTorch（GPU 可选）
-- CUDA：可选，用于加速（当前环境示例为 CUDA 11.1）
+- CUDA：可选，用于加速（当前环境未使用cuda）
 
 目录结构与内容
 - models/
